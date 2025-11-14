@@ -182,7 +182,7 @@ The tool will:
 
 ## Training & Evaluation
 
-The tuned models were trained using knowledge distillation, leveraging the teacher model GPT-OSS-120B. We used 28 Python functions and classes as seed data and supplemented them with 10,000 synthetic examples covering various domains (data science, web development, utilities, algorithms).
+The tuned models were trained using knowledge distillation, leveraging the teacher model GPT-OSS-120B. The data+config+script used for finetuning can be found in [finetuning](/finetuning). We used 28 Python functions and classes as seed data and supplemented them with 10,000 synthetic examples covering various domains (data science, web development, utilities, algorithms).
 
 We compare the teacher model and the student model on 250 held-out test examples using LLM-as-a-judge evaluation:
 
@@ -216,7 +216,7 @@ Because your proprietary code shouldn't leave your infrastructure. Cloud APIs cr
 
 Currently, the tool only adds missing docstrings. Updating existing documentation is planned for future releases. For now, you can manually remove docstrings you want regenerated.
 
-**Q: Which docstring style should I use?**
+**Q: Which docstring style can I use?**
 
 - **Google**: Most readable, great for general Python projects
 
