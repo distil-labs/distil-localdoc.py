@@ -1,0 +1,6 @@
+base:
+  task: information-extraction
+  student_model_name: Qwen3-0.6B
+  teacher_model_name: openai.gpt-oss-120b-thinking
+synthgen:
+  teacher_temperature: 0.6
