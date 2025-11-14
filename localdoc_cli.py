@@ -49,6 +49,7 @@ Output: Just the complete docstring content (without the triple quotes). Do not 
 You will be given a single task with context in the context XML block and the task in the question XML block
 Solve the task in question block based on the context in context block.
 Generate only the answer, do not generate anything else
+/no_think
 """,
             },
             {
