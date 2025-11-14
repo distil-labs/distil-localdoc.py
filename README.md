@@ -1,4 +1,4 @@
-# Distil-localdoc
+# distil-localdoc.py
 <p align="center">
     <img src="logo.png" alt="drawing" width="400"/>
 </p>
@@ -35,10 +35,10 @@ ollama create localdoc_qwen3 -f Modelfile
 Next, we load the model and your Python file. By default we load the downloaded Qwen3 0.6B model and generate Google-style docstrings, but you can also specify different docstring formats.
 
 ```bash
-python localdoc_cli.py --file your_script.py
+python localdoc.py --file your_script.py
 
 # optionally, specify model and docstring style
-python localdoc_cli.py --file your_script.py --model localdoc_qwen3 --style google
+python localdoc.py --file your_script.py --model localdoc_qwen3 --style google
 ```
 
 The tool will generate an updated file with `_documented` suffix (e.g., `your_script_documented.py`).
@@ -172,7 +172,7 @@ async def fetch_user_data(user_id, session, timeout=30):
 Simply provide any Python file with functions or classes that need documentation:
 
 ```bash
-python localdoc_cli.py --file /path/to/your/file.py
+python localdoc.py --file /path/to/your/file.py
 ```
 
 The tool will:
