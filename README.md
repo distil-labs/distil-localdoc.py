@@ -50,6 +50,7 @@ The assistant can generate docstrings for:
 - **Methods**: Instance and class method documentation with proper formatting. The tool skips double underscore (dunder: __xxx) methods.
 
 ## Examples
+Feel free to run them yourself using the files in [examples](examples)
 
 ### Before:
 ```python
